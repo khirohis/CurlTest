@@ -13,6 +13,11 @@
 		8ABF53F31C4CE3D10023F4BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF53F11C4CE3D10023F4BD /* Main.storyboard */; };
 		8ABF53F51C4CE3D10023F4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF53F41C4CE3D10023F4BD /* Assets.xcassets */; };
 		8ABF53F81C4CE3D20023F4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF53F61C4CE3D20023F4BD /* LaunchScreen.storyboard */; };
+		8ABF540A1C4CE4640023F4BD /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABF54051C4CE4640023F4BD /* libcurl.a */; };
+		8ABF540C1C4CE4FF0023F4BD /* CurlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF540B1C4CE4FF0023F4BD /* CurlHandler.m */; };
+		8ABF54111C4CFC240023F4BD /* GTE_CyberTrust_Global_Root.pem in Resources */ = {isa = PBXBuildFile; fileRef = 8ABF54101C4CFC240023F4BD /* GTE_CyberTrust_Global_Root.pem */; };
+		8ABF54141C4D00B60023F4BD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABF54131C4D00B60023F4BD /* Security.framework */; };
+		8ABF54161C4D011F0023F4BD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABF54151C4D011F0023F4BD /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,21 @@
 		8ABF53F41C4CE3D10023F4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ABF53F71C4CE3D20023F4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ABF53F91C4CE3D20023F4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ABF54001C4CE4640023F4BD /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		8ABF54011C4CE4640023F4BD /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
+		8ABF54021C4CE4640023F4BD /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
+		8ABF54031C4CE4640023F4BD /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		8ABF54041C4CE4640023F4BD /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		8ABF54051C4CE4640023F4BD /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		8ABF54061C4CE4640023F4BD /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		8ABF54071C4CE4640023F4BD /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		8ABF54081C4CE4640023F4BD /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		8ABF54091C4CE4640023F4BD /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		8ABF540B1C4CE4FF0023F4BD /* CurlHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurlHandler.m; sourceTree = "<group>"; };
+		8ABF540D1C4CE5190023F4BD /* CurlHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurlHandler.h; sourceTree = "<group>"; };
+		8ABF54101C4CFC240023F4BD /* GTE_CyberTrust_Global_Root.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GTE_CyberTrust_Global_Root.pem; sourceTree = "<group>"; };
+		8ABF54131C4D00B60023F4BD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8ABF54151C4D011F0023F4BD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABF54141C4D00B60023F4BD /* Security.framework in Frameworks */,
+				8ABF54161C4D011F0023F4BD /* libz.tbd in Frameworks */,
+				8ABF540A1C4CE4640023F4BD /* libcurl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				8ABF53E71C4CE3D10023F4BD /* curltest */,
+				8ABF54121C4D00880023F4BD /* Frameworks */,
 				8ABF53E61C4CE3D10023F4BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,10 +82,14 @@
 		8ABF53E71C4CE3D10023F4BD /* curltest */ = {
 			isa = PBXGroup;
 			children = (
+				8ABF540F1C4CFBE00023F4BD /* Resources */,
+				8ABF53FF1C4CE4640023F4BD /* curl */,
 				8ABF53EB1C4CE3D10023F4BD /* AppDelegate.h */,
 				8ABF53EC1C4CE3D10023F4BD /* AppDelegate.m */,
 				8ABF53EE1C4CE3D10023F4BD /* ViewController.h */,
 				8ABF53EF1C4CE3D10023F4BD /* ViewController.m */,
+				8ABF540D1C4CE5190023F4BD /* CurlHandler.h */,
+				8ABF540B1C4CE4FF0023F4BD /* CurlHandler.m */,
 				8ABF53F11C4CE3D10023F4BD /* Main.storyboard */,
 				8ABF53F41C4CE3D10023F4BD /* Assets.xcassets */,
 				8ABF53F61C4CE3D20023F4BD /* LaunchScreen.storyboard */,
@@ -77,6 +105,40 @@
 				8ABF53E91C4CE3D10023F4BD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ABF53FF1C4CE4640023F4BD /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				8ABF54051C4CE4640023F4BD /* libcurl.a */,
+				8ABF54001C4CE4640023F4BD /* curl.h */,
+				8ABF54011C4CE4640023F4BD /* curlbuild.h */,
+				8ABF54021C4CE4640023F4BD /* curlrules.h */,
+				8ABF54031C4CE4640023F4BD /* curlver.h */,
+				8ABF54041C4CE4640023F4BD /* easy.h */,
+				8ABF54061C4CE4640023F4BD /* mprintf.h */,
+				8ABF54071C4CE4640023F4BD /* multi.h */,
+				8ABF54081C4CE4640023F4BD /* stdcheaders.h */,
+				8ABF54091C4CE4640023F4BD /* typecheck-gcc.h */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
+		8ABF540F1C4CFBE00023F4BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8ABF54101C4CFC240023F4BD /* GTE_CyberTrust_Global_Root.pem */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8ABF54121C4D00880023F4BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ABF54151C4D011F0023F4BD /* libz.tbd */,
+				8ABF54131C4D00B60023F4BD /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +201,7 @@
 				8ABF53F81C4CE3D20023F4BD /* LaunchScreen.storyboard in Resources */,
 				8ABF53F51C4CE3D10023F4BD /* Assets.xcassets in Resources */,
 				8ABF53F31C4CE3D10023F4BD /* Main.storyboard in Resources */,
+				8ABF54111C4CFC240023F4BD /* GTE_CyberTrust_Global_Root.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ABF53F01C4CE3D10023F4BD /* ViewController.m in Sources */,
+				8ABF540C1C4CE4FF0023F4BD /* CurlHandler.m in Sources */,
 				8ABF53ED1C4CE3D10023F4BD /* AppDelegate.m in Sources */,
 				8ABF53EA1C4CE3D10023F4BD /* main.m in Sources */,
 			);
@@ -197,6 +261,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -240,6 +305,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -263,6 +329,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = curltest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/curltest/curl",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.hogelab.curltest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -274,6 +344,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = curltest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/curltest/curl",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.hogelab.curltest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -298,6 +372,7 @@
 				8ABF53FE1C4CE3D20023F4BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
